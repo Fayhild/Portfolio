@@ -92,6 +92,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     
+    
 }
 
 nav #nav-liens ul {
@@ -130,6 +131,7 @@ nav .menu {
     nav #nav-liens.menu-mobile {
         transform: translateX(0%); /* lorsque l'on clique sur le hamburger, le menu se deploie sur la page */
         background-color: #e6ccb2;
+        z-index: 1;
     } 
 
     nav {
@@ -147,6 +149,7 @@ nav .menu {
         right: 35px;
         top: 20px;
         transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1)0s;
+        z-index: 2;
     }
 
     nav .menu:hover {
@@ -178,7 +181,34 @@ nav .menu {
         color: #3c6e71;
     }
 
+    .homepage {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 60vh;
+        
+    }
 
+    .homepage .moi {
+        font-size: 70px;   
+                    
+    }
+    
+    .homepage .presentation, .homepage .etudes {
+    
+        font-size: 30px;
+        
+    }
+
+    .homepage .pdp img {
+
+        transform: scale(100%);
+    }
+
+
+    
 }
 
 main {
@@ -188,8 +218,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+            
 }
 
 main .moi {
@@ -208,7 +237,7 @@ main .presentation, .etudes {
 .homepage {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
 
 }
@@ -216,4 +245,104 @@ main .presentation, .etudes {
 .homepage img {
 
     transform: scale(115%);
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+}
+
+.homepage img:hover {
+
+    box-shadow: 10px 10px rgba(0,0,0,.15);
+    transition: all .4s ease;
+
+}
+
+section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1575px) {
+
+    main .moi {
+        font-size: 80px;
+        
+        
+    }
+    
+    main .presentation, .etudes {
+    
+        font-size: 40px;
+        
+    }
+
+}
+
+@media screen and (max-width: 1350px) {
+
+    main .moi {
+        font-size: 60px;
+        
+        
+    }
+    
+    main .presentation, .etudes {
+    
+        font-size: 30px;
+        
+    }
+
+    .homepage img {
+
+        transform: scale(100%);
+    }
+
+}
+
+@media screen and (max-width: 1110px) {
+
+    main .moi {
+        font-size: 50px;
+        
+        
+    }
+    
+    main .presentation, .etudes {
+    
+        font-size: 25px;
+        
+    }
+
+    .homepage img {
+
+        transform: scale(80%);
+    }
+
+}
+
+
+@media screen and (max-width: 950px) {
+
+    main .moi {
+        font-size: 35px;
+        
+        
+    }
+    
+    main .presentation, .etudes {
+    
+        font-size: 20px;
+        
+    }
+
+    .homepage img {
+
+        transform: scale(70%);
+    }
+
+    .homepage {
+
+        margin-left: 2%;   
+    }
 }
