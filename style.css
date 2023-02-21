@@ -188,12 +188,32 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
 
-main h1 {
-    font-size: 60px;
+main .moi {
+    font-size: 100px;
     font-family: 'Inter', sans-serif;
-    text-align: center;
+    
 }
 
+main .presentation, .etudes {
+
+    font-size: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.homepage {
+
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+}
+
+.homepage img {
+
+    transform: scale(115%);
+}
