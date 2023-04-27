@@ -1,7 +1,12 @@
 function menuOnClick() {
-    document.getElementById("nav-liens").classList.toggle("menu-mobile");
-   
+  document.getElementById("nav-liens").classList.toggle("menu-mobile");
+}
+/* lorsque le menu-mobile a été déployé par l'utilisatuer et que ce dernier sroll vers le bas, le menu-mobile perds sa clase menu-mobile, ainsi il se retracte*/
+window.addEventListener("scroll", function() {
+  if (window.pageYOffset > 0) {
+    document.getElementById("nav-liens").classList.remove("menu-mobile");
   }
+});
 
   window.onload = function() {
     setTimeout(function() {
