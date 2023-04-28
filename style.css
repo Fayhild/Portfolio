@@ -600,7 +600,7 @@ section #project {
 
 /* contact */
 
-form { max-width:420px; margin:0 auto 50px auto; }
+form { max-width:420px; margin:0 auto 60px auto; }
 
 .feedback-input {
   color: black;
@@ -651,6 +651,7 @@ textarea {
     margin-bottom: 40px;
     color: #000;
     font-family: 'Space Mono';
+    margin-top: 1%;
 }
 
 /* contact */
