@@ -169,7 +169,7 @@ nav .menu {
 /**/
 
 @media screen and (max-width: 800px) {
- 
+
    nav #nav-liens {
         position: absolute;
         width: 100%;
@@ -191,6 +191,8 @@ nav .menu {
 
     nav {
         padding: 0;
+        height: 80px;
+        background-color: #e6ccb2;
     }
 
     nav #nav-liens ul {
