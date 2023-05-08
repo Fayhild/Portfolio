@@ -14,6 +14,8 @@ window.addEventListener("scroll", function() {
     }, 200);
 }
 
+
+
 /* permet de faire apparaître la navabr lors du scroll vers le haut
 */
 var prevScrollpos = window.pageYOffset;

@@ -68,8 +68,7 @@ a {
 .arrow i  {
   transform: translateY(0);
   font-size: 50px;
-  margin-bottom: 10vh;
-  margin-top: 10vh;
+  
 }
 
 .arrow i:hover {
@@ -83,6 +82,8 @@ a {
   display: flex;
   justify-content: center;
   z-index: 1;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
 }
 
 .arrow i {
@@ -229,11 +230,14 @@ nav .menu {
     } 
 
     .arrow {
-      z-index: -2;  
+      z-index: -2; 
+      margin-top: 5vh; 
   }
 
   .arrow i {
     z-index: -2;
+    font-size: 30px;
+    
   }
     nav #nav-liens a {
         transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1)0s;
@@ -251,11 +255,14 @@ nav .menu {
         align-items: center;
         text-align: center;
         width: 100%;
-        height: 60vh;    
+        height: 60vh; 
+        
+        
     }
 
     .homepage .moi {
-        font-size: 70px;   
+        font-size: 50px;  
+         
                     
     }
     
@@ -263,13 +270,19 @@ nav .menu {
     
         font-size: 30px;
         
+        
     }
 
     .homepage .pdp img {
 
-        transform: scale(100%);
+        transform: scale(80%);
+        
     }
 
+    main {
+      margin-top: 6% !important; 
+      
+    }
 
     
 }
@@ -280,8 +293,7 @@ main {
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-            
+    align-items: center;   
 }
 
 main .moi {
@@ -427,6 +439,12 @@ section {
   margin-bottom: 2%;
 }
 
+.about .attract {
+  color: #215b5f;
+  font-style: italic;
+  font-weight: 500;
+  
+}
 .about p {
   font-family: 'Inter' ;
   width: 50%;
@@ -584,10 +602,25 @@ section #project {
     .img-container {
       margin: 0;
     }
+
+    #project {
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    .btn {
+      padding: 1em 1.5em;  
+    }
+
+    .about p {
+      
+      width: 70%;
+      
+    }
   }
   
   
-  @media (min-width: 769px) and (max-width: 1200px) {
+  @media (min-width: 800px) and (max-width: 1200px) {
     .img-container h3 {
       font-size: 1.5rem;
     }
@@ -690,6 +723,8 @@ textarea {
   opacity: 1;
   z-index: 1;
 }
+
+
 
 /**/
 
