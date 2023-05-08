@@ -581,7 +581,26 @@ section #project {
   }
   
   /* ......../ media query /.......... */
+
+  @media screen and (max-width: 1350px) {
+
+    #project {
+      width: 90%;
+      margin: 0 auto;
+    }
   
+  }
+  
+  @media (min-width: 800px) and (max-width: 1200px) {
+    .img-container h3 {
+      font-size: 1rem;
+    }
+  
+    .img-container .btn {
+      font-size: 0.7rem;
+    }
+  }
+
   @media (max-width: 800px) {
     
     /* ......./ project /......... */
@@ -614,21 +633,17 @@ section #project {
 
     .about p {
       
-      width: 70%;
+      width: 60%;
       
     }
-  }
-  
-  
-  @media (min-width: 800px) and (max-width: 1200px) {
+
     .img-container h3 {
-      font-size: 1.5rem;
-    }
-  
-    .img-container .btn {
-      font-size: 0.7rem;
+      font-size: 2rem;
     }
   }
+  
+  
+
   
 
 /* projets */
