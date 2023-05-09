@@ -139,16 +139,17 @@ nav .logo i:hover, nav a:hover {
 nav {
     
     font-family: 'Space Mono', monospace;
-    position: fixed; /*passer en absolute pout ne pas utiliser le deploiement au scroll*/
+    position: fixed; 
     padding: 20px 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    animation: slideDown 1s forwards;
+    animation: slideDown 1s forwards; 
     background-color: #e6ccb2;
     transition: top 0.3s; 
     z-index: 50;
+    
 }
 
 nav #nav-liens ul {
@@ -190,10 +191,10 @@ nav .menu {
         z-index: 2;
     } 
 
-    nav {
-        padding: 0;
-        height: 80px;
-        background-color: #e6ccb2;
+    nav { 
+      padding: 0;
+      height: 80px;
+      background-color: #e6ccb2; 
     }
 
     nav #nav-liens ul {
@@ -807,3 +808,4 @@ textarea {
     transform: translateY(0);
   }
 }
+

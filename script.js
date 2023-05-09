@@ -16,8 +16,8 @@ window.addEventListener("scroll", function() {
 
 
 
-/* permet de faire apparaître la navabr lors du scroll vers le haut
-*/
+/* permet de faire apparaître la navabar lors du scroll vers le haut */
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -27,4 +27,4 @@ window.onscroll = function() {
     document.getElementById("nava").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
-}
+} 
