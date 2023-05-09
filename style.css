@@ -684,11 +684,11 @@ section #project {
 }
 
 .img-container h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .img-container .btn {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .btn {
@@ -697,6 +697,65 @@ section #project {
 
 form {
   width: 60%;
+}
+
+.contact h2 {
+  font-size: 26px !important;
+}
+
+.left {
+
+  bottom: 70px;
+  left: 20px !important;
+  
+}
+
+
+.left .reseaux {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  justify-content: space-between;
+  font-size: 20px;
+
+}
+
+.bottom-left {
+
+ 
+  left: 30px;
+  
+
+  
+}
+
+nav .logo {
+  
+  left: 15px;
+  
+} 
+
+nav .menu {
+ 
+  right: 20px;
+  
+}
+
+.about h2 {
+  
+  font-size: 30px;
+  
+}
+
+.about p {
+
+  font-size: 16px ;
+}
+
+#project h2 {
+  
+  font-size: 30px;
+
 }
   
   }
