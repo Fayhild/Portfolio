@@ -683,11 +683,15 @@ section #project {
 }
 
 .img-container h3 {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .img-container .btn {
-  font-size: 0.5rem;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 1em 1.5em;  
 }
 
 form {
