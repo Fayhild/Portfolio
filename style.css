@@ -681,6 +681,18 @@ section #project {
   z-index: -2;
   font-size: 30px;
 }
+
+.img-container h3 {
+  font-size: 0.8rem;
+}
+
+.img-container .btn {
+  font-size: 0.5rem;
+}
+
+form {
+  width: 60%;
+}
   
   }
 
