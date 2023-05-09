@@ -232,7 +232,7 @@ nav .menu {
 
     .arrow {
       z-index: -2; 
-      margin-top: 5vh; 
+      margin-top: 10vh; 
   }
 
   .arrow i {
@@ -280,9 +280,8 @@ nav .menu {
         
     }
 
-    main {
-      margin-top: 6% !important; 
-      
+    .homepage {
+      margin-top: 25% !important;
     }
 
     
@@ -669,9 +668,6 @@ section #project {
       
   }
 
-  main {
-    margin-top: 15% !important;  
-  }
 
   .arrow {
     z-index: -2; 
