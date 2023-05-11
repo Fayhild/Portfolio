@@ -19,7 +19,8 @@
   rel="stylesheet"  type='text/css'>
 <script src="./script.js"></script>
 
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--découverte de la superbe librairie AOS !-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
@@ -91,7 +92,7 @@
       <a href="#aboutme"><i class='fas fa-angle-double-down'></i></a>
     </div>
 
-    <section class="about" id="aboutme">
+    <section class="about" id="aboutme" data-aos="zoom-in-up" data-aos-once="true">
 
       <h2>A propos</h2>
 
@@ -115,10 +116,10 @@
 
     </section>
 
-    <section id="project">
-        <h2>Mes projets</h2>
-        <div class="project-container container">
-          <div class="project-type prj1">
+    <section id="project" >
+        <h2 data-aos="zoom-in-up"  data-aos-once="true">Mes projets</h2>
+        <div class="project-container container" data-aos="flip-left" data-aos-once="true" data-aos-delay="200">
+          <div class="project-type prj1" >
             <div class="img-container">
               <img src="./img/arduino.png" alt="error" />
               <div class="img-content">
@@ -132,7 +133,7 @@
               </div>
             </div>
           </div>
-          <div class="project-type prj2">
+          <div class="project-type prj2" >
             <div class="img-container">
               <img src="./img/econocom.png" alt="error" />
               <div class="img-content">
@@ -146,7 +147,7 @@
               </div>
             </div>
           </div>
-          <div class="project-type prj3">
+          <div class="project-type prj3" >
             <div class="img-container">
               <img src="./img/pentree.png" alt="error" />
               <div class="img-content">
@@ -162,8 +163,8 @@
           </div>
         </div>
 
-        <div class="project-container container">
-          <div class="project-type prj1">
+        <div class="project-container container" data-aos="flip-left" data-aos-once="true" data-aos-delay="200">
+          <div class="project-type prj1" >
             <div class="img-container">
               <img src="./img/debian.png" alt="error" />
               <div class="img-content">
@@ -177,7 +178,7 @@
               </div>
             </div>
           </div>
-          <div class="project-type prj2">
+          <div class="project-type prj2" >
             <div class="img-container">
               <img src="./img/depeches.png" alt="error" />
               <div class="img-content">
@@ -191,7 +192,7 @@
               </div>
             </div>
           </div>
-          <div class="project-type prj3">
+          <div class="project-type prj3" >
             <div class="img-container">
               <img src="./img/titanic.png" alt="error" />
               <div class="img-content">
@@ -207,8 +208,8 @@
           </div>
         </div>
 
-        <div class="project-container container">
-          <div class="project-type prj1">
+        <div class="project-container container" data-aos="flip-left" data-aos-once="true" data-aos-delay="200">
+          <div class="project-type prj1" >
             <div class="img-container">
               <img src="./img/accident.jpeg" alt="error" />
               <div class="img-content">
@@ -217,6 +218,21 @@
                   href="./projets/accidents.html"
                   class="btn btn-primary"
                   
+                  >En savoir plus</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-type prj3"  >
+            <div class="img-container">
+              <img src="./img/indisponible.png" alt="error" />
+              <div class="img-content">
+                <h3>A venir !</h3>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  target="blank"
                   >En savoir plus</a
                 >
               </div>
@@ -237,27 +253,12 @@
               </div>
             </div>
           </div>
-
-          <div class="project-type prj3">
-            <div class="img-container">
-              <img src="./img/indisponible.png" alt="error" />
-              <div class="img-content">
-                <h3>A venir !</h3>
-                <a
-                  href="#"
-                  class="btn btn-primary"
-                  target="blank"
-                  >En savoir plus</a
-                >
-              </div>
-            </div>
-          </div>
         </div>
 
         
       </section>
 
-      <section class="contact" id="contactme">
+      <section class="contact" id="contactme" data-aos="zoom-in-up" data-aos-once="true" data-aos-delay="200">
 
         <h2>Me contacter</h2>
       <form>      
@@ -269,6 +270,8 @@
 
     </section>
 
-  
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
