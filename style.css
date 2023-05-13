@@ -1,7 +1,6 @@
 body {
     background-color: #e6ccb2;
-    height: 3000px;
-       
+    height: 3000px;       
 }
 
 *, 
@@ -439,7 +438,7 @@ section {
   margin-bottom: 2%;
 }
 
-.about .attract {
+.attract {
   color: #215b5f;
   font-style: italic;
   font-weight: 500;
@@ -863,4 +862,378 @@ textarea {
     transform: translateY(0);
   }
 }
+
+/* ______________________________________________________________________________________*/
+/* FENETRES MODALES */
+
+.projectTitle {
+  font-family: 'Space Mono';
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.projectDesc {
+  margin: 3% auto;
+  font-family: 'Inter' ;
+  text-align: center;
+  max-width: 90%;
+  line-height: 1.4;
+  
+}
+
+.projectComp {
+  font-family: 'Space Mono';
+  text-align: center;
+  font-size: 22px;
+}
+
+/* FENETRE MODALE STI2D */
+
+.modal-container {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal-container.active {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal-container.active .overlay {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 95vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+}
+
+.modal-container.active .modal {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close-modal {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+  
+}
+
+/* */
+
+.containerSlider {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 315px;
+  background-color: #000;
+  
+}
+
+.slider img {
+  max-width: 100%;
+  display: none; 
+  height: 270px;
+}
+
+img.active {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* */
+.competences {
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+}
+
+.competences i {
+  margin: 0 3%;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1)0s;
+  font-size: 22px;
+}
+
+.competences i:hover {
+  color: #3c6e71;
+    transform: matrix(1,0,0,1,0,-3);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1)0s;
+}
+
+/* ---------_____------ */
+
+.tooltip1 {
+  position: relative;
+  opacity: 1;
+}
+.competences .tooltip1 .tooltiptext1 {
+ 
+  width: 200px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: -90%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext1::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext1 {
+ 
+  opacity: 1;
+ 
+  
+}
+
+.tooltip1 .tooltiptext1:hover {
+  opacity: 0;
+}
+
+
+/* --------------------------- */
+
+
+.competences .tooltip1 .tooltiptext2 {
+ 
+  width: 200px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: -90%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext2 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext2:hover {
+  opacity: 0;
+}
+
+/*   ------------------   */
+
+.competences .tooltip1 .tooltiptext3 {
+ 
+  width: 150px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext3::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext3 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext3:hover {
+  opacity: 0;
+}
+
+/* ------------ */
+
+
+.competences .tooltip1 .tooltiptext4 {
+ 
+  width: 250px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: -270%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext4::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext4 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext4:hover {
+  opacity: 0;
+}
+
+/* ------------------------ */
+
+.competences .tooltip1 .tooltiptext5 {
+ 
+  width: 120px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext5::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext5 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext5:hover {
+  opacity: 0;
+}
+
+/* FENETRE MODALE STI2D */
 

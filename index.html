@@ -17,7 +17,7 @@
 <link 
   href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
   rel="stylesheet"  type='text/css'>
-<script src="./script.js"></script>
+
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--découverte de la superbe librairie AOS !-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -118,20 +118,16 @@
 
     </section>
 
+  
     <section id="project" >
         <h2 data-aos="zoom-in-up"  data-aos-once="true">Mes projets</h2>
-        <div class="project-container container" data-aos="flip-left" data-aos-once="true" data-aos-delay="200">
+        <div class="project-container container" data-aos="flip-left" data-aos-once="true" data-aos-delay="200">        
           <div class="project-type prj1" >
             <div class="img-container">
               <img src="./img/arduino.png" alt="error" />
-              <div class="img-content">
+              <div class="img-content">             
                 <h3>Projet STI2D</h3>
-                <a
-                  href="./projets/sti2d.html"
-                  class="btn btn-primary"
-                  
-                  >En savoir plus</a
-                >
+              <a class="btn btn-primary modal-btn modal-trigger"> En savoir plus </a>
               </div>
             </div>
           </div>
@@ -272,6 +268,75 @@
 
     </section>
 
+    <!--FENETRE MODALE STI2D-->
+
+    <div class="modal-container">
+
+      <div class="overlay modal-trigger"></div>
+     
+      <div class="modal">
+        <a class="close-modal modal-trigger"> <i class="fa-solid fa-xmark"></i> </a>
+      
+          <h2 class="projectTitle">Création d'un système numérique sécurisé (Projet BAC STI2D)</h2>
+
+        <div class="containerSlider">
+
+          <div class="slider">
+            <img class="active" src="./projets/img/sti2d/tinkercad.png">
+            <img src="./projets/img/sti2d/exigences.png">
+            <img src="./projets/img/sti2d/Image2.jpg">
+            <img src="./projets/img/sti2d/open-close.png">
+            <img src="./projets/img/sti2d/multimetre.png">
+            
+            
+        
+          </div>
+      
+          <div class="cont-btn">
+            <div class="btn-nav leftBtn"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="btn-nav right"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+
+      </div>
+
+      <p class="projectDesc">
+
+        Ce <span class="attract">projet</span> a été réalisé dans le cadre de ma <span class="attract">dernière année de STI2D</span>. <br>
+
+        Le but était de concevoir un <span class="attract">robot distributeur de médicaments</span> afin d'<span class="attract">aider les personnes à mobilité réduite</span>.
+
+         Mon rôle était de <span class="attract">sécuriser ces médicaments</span> afin qu'ils ne soient accessibles uniquement par la personne concernée et ainsi <span class="attract">limiter le risque d'accident</span>.
+
+        Pour ce faire, j'ai utiliser une carte <span class="attract">Arduino</span> et j'ai procédé à la création d'un système de <span class="attract">serrure automatique</span>.
+
+        Cette sérrure était accessible à l'aide de cartes <span class="attract">RFID</span> ainsi que via un <span class="attract">mot de passe</span> auxquels cas les cartes soient perdues.
+
+        Le système devait <span class="attract">guider</span> l'utilisateur qu'il puisse accéder à ces médicaments et l'<span class="attract">alerter</span> lors d'une tentative d'intrusion via des <span class="attract">témoins électroniques</span> (buzzer, leds, écran LCD). <br>
+
+        J'ai finalement obtenu la note de <span class="attract">19/20</span> lors de la préséntation du projet au Grand Oral du Baccalauréat 2022.
+
+      </p>
+
+      <h3 class="projectComp">Compétences déployées</h3>
+
+      <div class="competences">
+
+         <i class="fa-solid fa-infinity tooltip1"><span class="tooltiptext1">Programmation Arduino</span></i> 
+          
+        <i class="fa-solid fa-person-chalkboard tooltip1"><span class="tooltiptext2">Réstitution orale du projet</span></i>
+        <i class="fa-solid fa-people-group tooltip1"><span class="tooltiptext3">Travail en équipe</span></i>
+        <i class="fa-sharp fa-solid fa-bolt tooltip1"><span class="tooltiptext4">Manipulation de composants électroniques</span></i>
+        <i class="fa-solid fa-lock tooltip1"><span class="tooltiptext5">Sécuriser un système</span></i>
+      </div>
+  
+      </div>
+
+      </div>
+
+      
+    <!--FENETRE MODALE STI2D-->
+
+    <script src="./script.js"></script>
     <script>
       AOS.init();
     </script>
