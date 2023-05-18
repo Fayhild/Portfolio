@@ -866,6 +866,9 @@ textarea {
 /* ______________________________________________________________________________________*/
 /* FENETRES MODALES */
 
+/*Actuellement en première année d'informatique, je manque de connaissances et je n'ai pas vu d'autres alternatives que de dupliquer chaque fenêtre modale, 
+      je me doute qu'il existe sûrement un moyen plus optimisé pour le faire*/
+
 .projectTitle {
   font-family: 'Space Mono';
   text-align: center;
@@ -899,6 +902,7 @@ textarea {
   height: 100vh;
   transition: visibility 0.4s;
   z-index: 99;
+  /*overflow-y: scroll;*/
 }
 .modal-container.active {
   /* display: block; */
@@ -1237,3 +1241,434 @@ img.active {
 
 /* FENETRE MODALE STI2D */
 
+
+/* FENETRE MODALE ECONOCOM */
+
+
+.modal2-container2 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal2-container2.active2 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay2 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal2-container2.active2 .overlay2 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal2 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+
+}
+
+.modal2-container2.active2 .modal2 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close2-modal2 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+
+/* FENETRE MODALE ECONOCOM */
+
+
+/* FENETRE MODALE PENTREE */
+
+.modal3-container3 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal3-container3.active3 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay3 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal3-container3.active3 .overlay3 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal3 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+
+}
+
+.modal3-container3.active3 .modal3 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close3-modal3 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+
+
+
+
+/* FENETRE MODALE PENTREE */
+
+
+/* FENETRE MODALE DEBIAN */
+
+.modal4-container4 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal4-container4.active4 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay4 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal4-container4.active4 .overlay4 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal4 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+
+}
+
+.modal4-container4.active4 .modal4 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close4-modal4 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+
+
+/* FENETRE MODALE DEBIAN */
+
+
+
+
+/* FENETRE MODALE DEPECHES */
+
+.modal5-container5 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal5-container5.active5 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay5 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal5-container5.active5 .overlay5 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal5 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+
+}
+
+.modal5-container5.active5 .modal5 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close5-modal5 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+
+
+/* FENETRE MODALE DEPECHES */
+
+
+
+/* FENETRE MODALE TITANIC */
+
+
+.modal6-container6 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal6-container6.active6 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay6 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal6-container6.active6 .overlay6 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal6 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+
+}
+
+.modal6-container6.active6 .modal6 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close6-modal6 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+
+/* FENETRE MODALE TITANIC */
+
+
+/* FENETRE MODALE ACCIDENTS */
+
+
+.modal7-container7 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal7-container7.active7 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay7 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal7-container7.active7 .overlay7 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal7 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+
+}
+
+.modal7-container7.active7 .modal7 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close7-modal7 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+
+
+/* FENETRE MODALE ACCIDENTS */
