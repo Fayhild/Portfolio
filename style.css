@@ -2151,6 +2151,7 @@ img.active {
   transform: translate(-50%, calc(-50% - 50px));
   transition: opacity 0.4s ease-out,
   transform 0.4s ease-out;
+  overflow-y: auto;
 
 }
 
@@ -2267,7 +2268,7 @@ img.active7 {
   transform: translate(-50%, calc(-50% - 50px));
   transition: opacity 0.4s ease-out,
   transform 0.4s ease-out;
-
+  overflow-y: auto;
 }
 
 .modal3-container3.active3 .modal3 {
@@ -2386,6 +2387,7 @@ img.active6 {
   transform: translate(-50%, calc(-50% - 50px));
   transition: opacity 0.4s ease-out,
   transform 0.4s ease-out;
+  overflow-y: auto;
 
 }
 
@@ -2503,6 +2505,7 @@ img.active5 {
   transform: translate(-50%, calc(-50% - 50px));
   transition: opacity 0.4s ease-out,
   transform 0.4s ease-out;
+  overflow-y: auto;
 
 }
 
@@ -2622,6 +2625,7 @@ img.active2 {
   transform: translate(-50%, calc(-50% - 50px));
   transition: opacity 0.4s ease-out,
   transform 0.4s ease-out;
+  overflow-y: auto;
 
 }
 
@@ -2739,6 +2743,7 @@ img.active3 {
   transform: translate(-50%, calc(-50% - 50px));
   transition: opacity 0.4s ease-out,
   transform 0.4s ease-out;
+  overflow-y: auto;
 
 }
 
