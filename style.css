@@ -433,9 +433,22 @@ section {
     font-family: 'Space Mono';
 }
 
+.about h3 {
+  text-align:left;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
+  font-family: 'Itim';
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
 .about {
   display: flex;
   margin-bottom: 2%;
+ 
+  width: 50%;
+  margin: 0 auto;
 }
 
 .attract {
@@ -446,7 +459,7 @@ section {
 }
 .about p {
   font-family: 'Inter' ;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   text-align: justify;
   font-size: 18px;
@@ -630,14 +643,12 @@ section #project {
       padding: 1em 1.5em;  
     }
 
-    .about p {
-      
-      width: 60%;
-      
-    }
-
     .img-container h3 {
       font-size: 2rem;
+    }
+
+    .about h3 {
+      font-size: 1.8rem;
     }
   }
   
@@ -823,7 +834,7 @@ textarea {
     color: #3c6e71;
   }
   40% {
-    transform: translateY(-20px);
+    transform: translateY(-0px);
     color: #026d57;
   }
   60% {
@@ -882,6 +893,25 @@ textarea {
   text-align: center;
   max-width: 90%;
   line-height: 1.4;
+  
+}
+
+.projectDesc2 {
+  margin: 3% auto;
+  font-family: 'Inter' ;
+  text-align: justify;
+  max-width: 90%;
+  line-height: 1.4;
+  
+}
+
+.projectDesc3 {
+  margin: 3% auto;
+  font-family: 'Inter' ;
+  text-align: justify;
+  max-width: 90%;
+  line-height: 1.4;
+  font-size: 15px;
   
 }
 
@@ -1239,8 +1269,840 @@ img.active {
   opacity: 0;
 }
 
-/* FENETRE MODALE STI2D */
+/* ------------------------ */
 
+.competences .tooltip1 .tooltiptext6 {
+ 
+  width: 120px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext6::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext6 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext6:hover {
+  opacity: 0;
+}
+
+/* ------------------------ */
+
+.competences .tooltip1 .tooltiptext7 {
+ 
+  width: 120px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext7::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext7 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext7:hover {
+  opacity: 0;
+}
+
+/*  */
+
+.competences .tooltip1 .tooltiptext8 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext8::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext8 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext8:hover {
+  opacity: 0;
+}
+
+/*   */
+
+.competences .tooltip1 .tooltiptext9 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext9::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext9 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext9:hover {
+  opacity: 0;
+}
+
+/*  */
+
+.competences .tooltip1 .tooltiptext10 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext10::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext10 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext10:hover {
+  opacity: 0;
+}
+
+/*   */
+
+.competences .tooltip1 .tooltiptext11 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext11::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext11 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext11:hover {
+  opacity: 0;
+}
+
+/*  */
+
+.competences .tooltip1 .tooltiptext12 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext12::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext12 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext12:hover {
+  opacity: 0;
+}
+
+/*   */
+
+.competences .tooltip1 .tooltiptext13 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext13::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext13 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext13:hover {
+  opacity: 0;
+}
+
+
+/*  */
+
+.competences .tooltip1 .tooltiptext14 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext14::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext14 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext14:hover {
+  opacity: 0;
+}
+
+/*  */
+
+
+.competences .tooltip1 .tooltiptext15 {
+ 
+  width: 140px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext15::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext15 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext15:hover {
+  opacity: 0;
+}
+
+
+/*  */
+
+.competences .tooltip1 .tooltiptext16 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext16::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext16 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext16:hover {
+  opacity: 0;
+}
+
+/*   */
+
+.competences .tooltip1 .tooltiptext17 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext17::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext17 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext17:hover {
+  opacity: 0;
+}
+
+/*   */
+
+.competences .tooltip1 .tooltiptext18 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext18::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext18 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext18:hover {
+  opacity: 0;
+}
+
+
+/*  */
+
+.competences .tooltip1 .tooltiptext19 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext19::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext19 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext19:hover {
+  opacity: 0;
+}
+
+
+/*   */
+
+.competences .tooltip1 .tooltiptext20 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext20::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext20 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext20:hover {
+  opacity: 0;
+}
+
+
+
+/*   */
+
+.competences .tooltip1 .tooltiptext21 {
+ 
+  width: 140px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext21::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext21 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext21:hover {
+  opacity: 0;
+}
+
+
+/*  */
+
+.competences .tooltip1 .tooltiptext22 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext22::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext22 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext22:hover {
+  opacity: 0;
+}
+
+
+/*  */
+
+.competences .tooltip1 .tooltiptext23 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext23::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext23 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext23:hover {
+  opacity: 0;
+}
+
+
+/*  */
+
+.competences .tooltip1 .tooltiptext24 {
+ 
+  width: 130px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext24::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext24 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext24:hover {
+  opacity: 0;
+}
+
+
+
+/*  */
+
+
+.competences .tooltip1 .tooltiptext25 {
+ 
+  width: 140px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext25::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext25 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext25:hover {
+  opacity: 0;
+}
+
+/* FENETRE MODALE STI2D */
 
 /* FENETRE MODALE ECONOCOM */
 
@@ -1308,6 +2170,52 @@ img.active {
   cursor: pointer;
   color: #3c6e71;
  
+}
+
+/* */
+
+.containerSlider7 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 315px;
+  background-color: #000;
+  
+}
+
+.slider7 img {
+  max-width: 100%;
+  display: none; 
+  height: 270px;
+}
+
+img.active7 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn7 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav7 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
 }
 
 /* FENETRE MODALE ECONOCOM */
@@ -1378,6 +2286,52 @@ img.active {
   cursor: pointer;
   color: #3c6e71;
  
+}
+
+/*   */
+
+.containerSlider6 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 315px;
+  background-color: #000;
+  
+}
+
+.slider6 img {
+  max-width: 100%;
+  display: none; 
+  height: 270px;
+}
+
+img.active6 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn6 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav6 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
 }
 
 
@@ -1451,6 +2405,50 @@ img.active {
   cursor: pointer;
   color: #3c6e71;
  
+}
+/*   */
+.containerSlider5 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 315px;
+  background-color: #000;
+  
+}
+
+.slider5 img {
+  max-width: 100%;
+  display: none; 
+  height: 270px;
+}
+
+img.active5 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn5 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav5 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
 }
 
 
@@ -1526,6 +2524,52 @@ img.active {
  
 }
 
+/*  */
+
+.containerSlider2 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 315px;
+  background-color: #000;
+  
+}
+
+.slider2 img {
+  max-width: 100%;
+  display: none; 
+  height: 270px;
+}
+
+img.active2 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn2 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav2 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
 
 /* FENETRE MODALE DEPECHES */
 
@@ -1597,6 +2641,52 @@ img.active {
   cursor: pointer;
   color: #3c6e71;
  
+}
+
+/*    */
+
+.containerSlider3 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 315px;
+  background-color: #000;
+  
+}
+
+.slider3 img {
+  max-width: 100%;
+  display: none; 
+  height: 270px;
+}
+
+img.active3 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn3 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav3 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
 }
 
 /* FENETRE MODALE TITANIC */
@@ -1671,4 +2761,59 @@ img.active {
 }
 
 
+/*     */
+
+.containerSlider4 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 315px;
+  background-color: #000;
+  
+}
+
+.slider4 img {
+  max-width: 100%;
+  display: none; 
+  height: 270px;
+}
+
+img.active4 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn4 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav4 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+
 /* FENETRE MODALE ACCIDENTS */
+
+/*  TOOLTIPS */
+
+
+
+/*   */
+
+
