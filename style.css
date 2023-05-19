@@ -932,7 +932,7 @@ textarea {
   height: 100vh;
   transition: visibility 0.4s;
   z-index: 99;
-  /*overflow-y: scroll;*/
+  
 }
 .modal-container.active {
   /* display: block; */
@@ -967,6 +967,7 @@ textarea {
   transform: translate(-50%, calc(-50% - 50px));
   transition: opacity 0.4s ease-out,
   transform 0.4s ease-out;
+  overflow-y: auto;
 }
 
 .modal-container.active .modal {
