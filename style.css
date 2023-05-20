@@ -603,13 +603,33 @@ section #project {
   
   }
   
-  @media (min-width: 800px) and (max-width: 1200px) {
+  @media (min-width: 800px) and (max-width: 930px) {
     .img-container h3 {
       font-size: 1rem;
     }
   
     .img-container .btn {
       font-size: 0.7rem;
+    }
+  }
+
+  @media (min-width: 930px) and (max-width: 1200px) {
+    .img-container h3 {
+      font-size: 1.2rem;
+    }
+  
+    .img-container .btn {
+      font-size: 1rem;
+    }
+  }
+
+  @media (min-width: 930px) and (max-width: 1000px) {
+    .img-container h3 {
+      font-size: 1rem;
+    }
+  
+    .img-container .btn {
+      font-size: 0.8rem;
     }
   }
 
@@ -995,7 +1015,7 @@ textarea {
   width: 70%;
   margin: 0 auto;
   margin-top: 2%;
-  height: 315px;
+  height: auto;
   background-color: #000;
   
 }
@@ -1003,7 +1023,7 @@ textarea {
 .slider img {
   max-width: 100%;
   display: none; 
-  height: 270px;
+  height: auto;
 }
 
 img.active {
@@ -2180,7 +2200,7 @@ img.active {
   width: 70%;
   margin: 0 auto;
   margin-top: 2%;
-  height: 315px;
+  height: auto;
   background-color: #000;
   
 }
@@ -2188,7 +2208,7 @@ img.active {
 .slider7 img {
   max-width: 100%;
   display: none; 
-  height: 270px;
+  height: auto;
 }
 
 img.active7 {
@@ -2296,7 +2316,7 @@ img.active7 {
   width: 70%;
   margin: 0 auto;
   margin-top: 2%;
-  height: 315px;
+  height: auto;
   background-color: #000;
   
 }
@@ -2304,7 +2324,7 @@ img.active7 {
 .slider6 img {
   max-width: 100%;
   display: none; 
-  height: 270px;
+  height: auto;
 }
 
 img.active6 {
@@ -2414,7 +2434,7 @@ img.active6 {
   width: 70%;
   margin: 0 auto;
   margin-top: 2%;
-  height: 315px;
+  height: auto;
   background-color: #000;
   
 }
@@ -2422,7 +2442,7 @@ img.active6 {
 .slider5 img {
   max-width: 100%;
   display: none; 
-  height: 270px;
+  height: auto;
 }
 
 img.active5 {
@@ -2534,7 +2554,7 @@ img.active5 {
   width: 70%;
   margin: 0 auto;
   margin-top: 2%;
-  height: 315px;
+  height: auto;
   background-color: #000;
   
 }
@@ -2542,7 +2562,7 @@ img.active5 {
 .slider2 img {
   max-width: 100%;
   display: none; 
-  height: 270px;
+  height: auto;
 }
 
 img.active2 {
@@ -2654,7 +2674,7 @@ img.active2 {
   width: 70%;
   margin: 0 auto;
   margin-top: 2%;
-  height: 315px;
+  height: auto;
   background-color: #000;
   
 }
@@ -2662,7 +2682,7 @@ img.active2 {
 .slider3 img {
   max-width: 100%;
   display: none; 
-  height: 270px;
+  height: auto;
 }
 
 img.active3 {
@@ -2773,7 +2793,7 @@ img.active3 {
   width: 70%;
   margin: 0 auto;
   margin-top: 2%;
-  height: 315px;
+  height: auto;
   background-color: #000;
   
 }
@@ -2781,7 +2801,7 @@ img.active3 {
 .slider4 img {
   max-width: 100%;
   display: none; 
-  height: 270px;
+  height: auto;
 }
 
 img.active4 {
