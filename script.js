@@ -149,9 +149,9 @@ precedent7.addEventListener('click', slidePrecedente7)
 
 function keyPress7(e){
   
-    if(e.keyCode === 77){
+    if(e.keyCode === 37){
         slidePrecedente7();
-    } else if(e.keyCode === 79){
+    } else if(e.keyCode === 39){
         slideSuivante7();
     }
 }
@@ -210,9 +210,9 @@ precedent6.addEventListener('click', slidePrecedente6)
 
 function keyPress6(e){
   
-    if(e.keyCode === 67){
+    if(e.keyCode === 37){
         slidePrecedente6();
-    } else if(e.keyCode === 69){
+    } else if(e.keyCode === 39){
         slideSuivante6();
     }
 }
@@ -271,9 +271,9 @@ precedent5.addEventListener('click', slidePrecedente5)
 
 function keyPress5(e){
   
-    if(e.keyCode === 57){
+    if(e.keyCode === 37){
         slidePrecedente5();
-    } else if(e.keyCode === 59){
+    } else if(e.keyCode === 39){
         slideSuivante5();
     }
 }
@@ -462,9 +462,9 @@ precedent4.addEventListener('click', slidePrecedente4)
 
 function keyPress4(e){
   
-    if(e.keyCode === 47){
+    if(e.keyCode === 37){
         slidePrecedente4();
-    } else if(e.keyCode === 49){
+    } else if(e.keyCode === 39){
         slideSuivante4();
     }
 }
