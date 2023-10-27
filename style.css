@@ -52,6 +52,12 @@ a {
 }
 
 
+.projectDesc2 a {
+ 
+  text-decoration: underline;
+}
+
+
 .bottom-left {
 
     background-color: black;
@@ -2123,6 +2129,170 @@ img.active {
   opacity: 0;
 }
 
+/* */
+.competences .tooltip1 .tooltiptext26 {
+ 
+  width: 140px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext26::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext26 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext26:hover {
+  opacity: 0;
+}
+
+/* */
+
+.competences .tooltip1 .tooltiptext27 {
+ 
+  width: 140px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext27::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext27 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext27:hover {
+  opacity: 0;
+}
+
+
+/* */
+.competences .tooltip1 .tooltiptext28 {
+ 
+  width: 140px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext28::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext28 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext28:hover {
+  opacity: 0;
+}
+
+/* */
+.competences .tooltip1 .tooltiptext29 {
+ 
+  width: 140px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext29::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext29 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext29:hover {
+  opacity: 0;
+}
+
+/* */
+
 /* FENETRE MODALE STI2D */
 
 /* FENETRE MODALE ECONOCOM */
@@ -2835,6 +3005,243 @@ img.active4 {
 
 
 /* FENETRE MODALE ACCIDENTS */
+
+/* FENETRE MODALE RESEAUX */
+
+.modal8-container8 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal8-container8.active8 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay8 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal8-container8.active8 .overlay8 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal8 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+  overflow-y: auto;
+
+}
+
+.modal8-container8.active8 .modal8 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close8-modal8 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+/*   */
+
+.containerSlider8 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: auto;
+  background-color: #000;
+  
+}
+
+.slider8 img {
+  max-width: 100%;
+  display: none; 
+  height: auto;
+}
+
+img.active8 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn8 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav8 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* FENETRE MODALE RESEAUX */
+
+/* FENETRE MODALE SUKI */
+
+.modal9-container9 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal9-container9.active9 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay9 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal9-container9.active9 .overlay9 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal9 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+  overflow-y: auto;
+
+}
+
+.modal9-container9.active9 .modal9 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close9-modal9 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+/*   */
+
+.containerSlider9 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: auto;
+  background-color: #000;
+  
+}
+
+.slider9 img {
+  max-width: 100%;
+  display: none; 
+  height: auto;
+}
+
+img.active9 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn9 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav9 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* FENETRE MODALE SUKI */
+
+
+
+
+
+
+
 
 /*  TOOLTIPS */
 

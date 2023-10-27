@@ -472,3 +472,123 @@ document.addEventListener('keydown', keyPress4)
 
 
 /* FENETRE MODALE ACCIDENTS */
+
+/* FENETRE MODALE RESEAUX */
+
+const modalContainer8 = document.querySelector(".modal8-container8");
+const modalTriggers8 = document.querySelectorAll(".modal8-trigger8");
+
+modalTriggers8.forEach(trigger8 => trigger8.addEventListener("click", toggleModal8))
+
+function toggleModal8(){
+  modalContainer8.classList.toggle("active8")
+}
+
+/*    */
+
+const items8 = document.querySelectorAll('.containerSlider8 img');
+const nbSlide8 = items8.length;
+const suivant8 = document.querySelector('.right8');
+const precedent8 = document.querySelector('.leftBtn8');
+let count8 = 0;
+
+function slideSuivante8(){
+    items8[count8].classList.remove('active8');
+
+    if(count8 < nbSlide8 - 1){
+        count8++;
+    } else {
+        count8 = 0;
+    }
+
+    items8[count8].classList.add('active8')   
+}
+
+suivant8.addEventListener('click', slideSuivante8)
+
+function slidePrecedente8(){
+    items8[count8].classList.remove('active8');
+
+    if(count8 > 0){
+        count8--;
+    } else {
+        count8 = nbSlide8 - 1;
+    }
+
+    items8[count8].classList.add('active8')  
+}
+precedent8.addEventListener('click', slidePrecedente8)
+
+function keyPress8(e){
+  
+    if(e.keyCode === 37){
+        slidePrecedente8();
+    } else if(e.keyCode === 39){
+        slideSuivante8();
+    }
+}
+document.addEventListener('keydown', keyPress8)
+
+
+/* FENETRE MODALE RESEAUX */
+
+
+/* FENETRE MODALE SUKI */
+
+const modalContainer9 = document.querySelector(".modal9-container9");
+const modalTriggers9 = document.querySelectorAll(".modal9-trigger9");
+
+modalTriggers9.forEach(trigger9 => trigger9.addEventListener("click", toggleModal9))
+
+function toggleModal9(){
+  modalContainer9.classList.toggle("active9")
+}
+
+/*    */
+
+const items9 = document.querySelectorAll('.containerSlider9 img');
+const nbSlide9 = items9.length;
+const suivant9 = document.querySelector('.right9');
+const precedent9 = document.querySelector('.leftBtn9');
+let count9 = 0;
+
+function slideSuivante9(){
+    items9[count9].classList.remove('active9');
+
+    if(count9 < nbSlide9 - 1){
+        count9++;
+    } else {
+        count9 = 0;
+    }
+
+    items9[count9].classList.add('active9')   
+}
+
+suivant9.addEventListener('click', slideSuivante9)
+
+function slidePrecedente9(){
+    items9[count9].classList.remove('active9');
+
+    if(count9 > 0){
+        count9--;
+    } else {
+        count9 = nbSlide9 - 1;
+    }
+
+    items9[count9].classList.add('active9')  
+}
+precedent9.addEventListener('click', slidePrecedente9)
+
+function keyPress9(e){
+  
+    if(e.keyCode === 37){
+        slidePrecedente9();
+    } else if(e.keyCode === 39){
+        slideSuivante9();
+    }
+}
+document.addEventListener('keydown', keyPress9)
+
+
+/* FENETRE MODALE SUKI */
+
