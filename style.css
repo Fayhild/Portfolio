@@ -821,7 +821,7 @@ form { max-width:420px; margin:0 auto 60px auto; }
 ;
 }
 
-input:hover {
+input:hover, textarea:hover {
   cursor: not-allowed;
 }
 textarea {
