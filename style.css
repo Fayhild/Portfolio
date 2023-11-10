@@ -539,13 +539,7 @@ section #project {
     object-position: center;
     
   }
-  
-  .img-container {
-    margin: 0 1rem;
-    position: relative;
 
-  }
-  
   .img-content {
     position: absolute;
     top: 70%;
@@ -565,6 +559,12 @@ section #project {
   
   .img-content a {
     font-size: 1.2rem;
+  }
+  
+  .img-container {
+    margin: 0 1rem;
+    position: relative;
+
   }
   
   .img-container::after {
@@ -934,6 +934,20 @@ textarea {
   max-width: 90%;
   line-height: 1.4;
   
+}
+
+
+.gamejam li {
+  margin: 3% auto;
+  font-family: 'Inter' ;
+  text-align: justify;
+  max-width: 90%;
+  list-style-type: circle;
+  
+}
+
+.listes {
+  margin-left: 5%;
 }
 
 .projectDesc3 {
@@ -2298,6 +2312,90 @@ img.active {
 
 /* */
 
+/* */
+.competences .tooltip1 .tooltiptext30 {
+ 
+  width: 140px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext30::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext30 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext30:hover {
+  opacity: 0;
+}
+
+/* */
+
+/* */
+.competences .tooltip1 .tooltiptext31 {
+ 
+  width: 140px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  font-family: 'Inter';
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.tooltip1 .tooltiptext31::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext31 {
+  opacity: 1;
+}
+
+.tooltip .tooltiptext31:hover {
+  opacity: 0;
+}
+
+/* */
+
 /* FENETRE MODALE STI2D */
 
 /* FENETRE MODALE ECONOCOM */
@@ -3240,6 +3338,121 @@ img.active9 {
 }
 
 /* FENETRE MODALE SUKI */
+
+/* FENETRE MODALE GAMEJAM */
+
+.modal10-container10 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal10-container10.active10 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay10 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal10-container10.active10 .overlay10 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal10 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+  overflow-y: auto;
+
+}
+
+.modal10-container10.active10 .modal10 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close10-modal10 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+/*   */
+
+.containerSlider10 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: auto;
+  background-color: #000;
+  
+}
+
+.slider10 img {
+  max-width: 100%;
+  display: none; 
+  height: auto;
+}
+
+img.active10 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cont-btn10 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav10 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* FENETRE MODALE GAMEJAM */
 
 
 

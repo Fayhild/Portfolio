@@ -592,3 +592,61 @@ document.addEventListener('keydown', keyPress9)
 
 /* FENETRE MODALE SUKI */
 
+/* FENETRE MODALE GAMEJAM */
+
+const modalContainer10 = document.querySelector(".modal10-container10");
+const modalTriggers10 = document.querySelectorAll(".modal10-trigger10");
+
+modalTriggers10.forEach(trigger10 => trigger10.addEventListener("click", toggleModal10))
+
+function toggleModal10(){
+  modalContainer10.classList.toggle("active10")
+}
+
+/*    */
+
+const items10 = document.querySelectorAll('.containerSlider10 img');
+const nbSlide10 = items10.length;
+const suivant10 = document.querySelector('.right10');
+const precedent10 = document.querySelector('.leftBtn10');
+let count10 = 0;
+
+function slideSuivante10(){
+    items10[count10].classList.remove('active10');
+
+    if(count10 < nbSlide10 - 1){
+        count10++;
+    } else {
+        count10 = 0;
+    }
+
+    items10[count10].classList.add('active10')   
+}
+
+suivant10.addEventListener('click', slideSuivante10)
+
+function slidePrecedente10(){
+    items10[count10].classList.remove('active10');
+
+    if(count10 > 0){
+        count10--;
+    } else {
+        count10 = nbSlide10 - 1;
+    }
+
+    items10[count10].classList.add('active10')  
+}
+precedent10.addEventListener('click', slidePrecedente10)
+
+function keyPress10(e){
+  
+    if(e.keyCode === 37){
+        slidePrecedente10();
+    } else if(e.keyCode === 39){
+        slideSuivante10();
+    }
+}
+document.addEventListener('keydown', keyPress10)
+
+/* FENETRE MODALE GAMEJAM */
+
