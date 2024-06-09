@@ -564,7 +564,7 @@ section #project {
   .img-container {
     margin: 0 1rem;
     position: relative;
-
+    user-select: none;
   }
   
   .img-container::after {
@@ -582,16 +582,22 @@ section #project {
     transform: scaleY(0);
     transform-origin: 100% 100%;
     transition: all 0.3s ease-in-out;
+    user-select: none;
   }
   
   .img-container:hover::after {
     opacity: 1;
     transform: scaleY(1);
   }
+
+  .img-container.no-dispo:hover::after {
+    opacity: 0;
+  }
   
   .img-container:hover .img-content {
     opacity: 1;
     top: 40%;
+    user-select: none;
   }
   
   #comingsoon {
@@ -1055,14 +1061,7 @@ img.active {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn {
   width: 100%;
@@ -2488,14 +2487,7 @@ img.active7 {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn7 {
   width: 100%;
@@ -2604,14 +2596,7 @@ img.active6 {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn6 {
   width: 100%;
@@ -2722,14 +2707,7 @@ img.active5 {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn5 {
   width: 100%;
@@ -2842,14 +2820,7 @@ img.active2 {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn2 {
   width: 100%;
@@ -2962,14 +2933,7 @@ img.active3 {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn3 {
   width: 100%;
@@ -3081,14 +3045,7 @@ img.active4 {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn4 {
   width: 100%;
@@ -3197,14 +3154,7 @@ img.active8 {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn8 {
   width: 100%;
@@ -3312,14 +3262,7 @@ img.active9 {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn9 {
   width: 100%;
@@ -3427,14 +3370,7 @@ img.active10 {
   display: block;
   animation: fadeZ 0.8s;
 }
-@keyframes fadeZ {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 
 .cont-btn10 {
   width: 100%;
@@ -3455,10 +3391,327 @@ img.active10 {
 /* FENETRE MODALE GAMEJAM */
 
 
+/* FENETRE MODALE WHATIF */
+
+.modal11-container11 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal11-container11.active11 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay11 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal11-container11.active11 .overlay11 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal11 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+  overflow-y: auto;
+
+}
+
+.modal11-container11.active11 .modal11 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close11-modal11 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+/*   */
+
+.containerSlider11 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: auto;
+  background-color: #000;
+  
+}
+
+.slider11 img {
+  max-width: 100%;
+  display: none; 
+  height: auto;
+}
+
+img.active11 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+
+.cont-btn11 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav11 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* FENETRE MODALE WHATIF */
 
 
+/* FENETRE MODALE API */
 
+.modal12-container12 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal12-container12.active12 {
+  /* display: block; */
+  visibility: visible;
+}
 
+.overlay12 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal12-container12.active12 .overlay12 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal12 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+  overflow-y: auto;
+
+}
+
+.modal12-container12.active12 .modal12 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close12-modal12 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+/*   */
+
+.containerSlider12 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: auto;
+  background-color: #000;
+  
+}
+
+.slider12 img {
+  max-width: 100%;
+  display: none; 
+  height: auto;
+}
+
+img.active12 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+
+.cont-btn12 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav12 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* FENETRE MODALE API */
+
+/* FENETRE MODALE SAE4 */
+
+.modal13-container13 {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: visibility 0.4s;
+  z-index: 99;
+}
+.modal13-container13.active13 {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay13 {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal13-container13.active13 .overlay13 {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal13 {
+  opacity: 0;
+  width: 95%;
+  max-width: 40%;
+  min-width: 300px;
+  height: 90vh;
+  padding: 30px;
+  background-color: #e6ccb2;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+  overflow-y: auto;
+
+}
+
+.modal13-container13.active13 .modal13 {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close13-modal13 {
+  
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #3c6e71;
+ 
+}
+/*   */
+
+.containerSlider13 {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: auto;
+  background-color: #000;
+  
+}
+
+.slider13 img {
+  max-width: 100%;
+  display: none; 
+  height: auto;
+}
+
+img.active13 {
+  display: block;
+  animation: fadeZ 0.8s;
+}
+
+.cont-btn13 {
+  width: 100%;
+  border: 1px solid #000;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  background-color: #3c6e71;
+}
+
+.btn-nav13 {
+  font-size: 30px;
+  margin: 0 15px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+/* FENETRE MODALE SAE4 */
 
 
 /*  TOOLTIPS */
@@ -3468,3 +3721,11 @@ img.active10 {
 /*   */
 
 
+@keyframes fadeZ {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

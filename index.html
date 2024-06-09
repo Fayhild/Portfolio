@@ -253,7 +253,7 @@
         
         </div>
 
-        <div class="project-container container" data-aos="flip-left" data-aos-once="true" data-aos-delay="200">
+        <div class="project-container container" data-aos="flip-right" data-aos-once="true" data-aos-delay="200">
           <div class="project-type prj1" >
             <div class="img-container">
               <img src="./img/GameJam.png" alt="error" />
@@ -267,21 +267,61 @@
             </div>
           </div>
 
-          <div class="project-type prj2"  >
+          <div class="project-type prj2" >
             <div class="img-container">
-              <img src="./img/vide.png" alt="error" />
-              
+              <img src="./img/whatif.png" alt="error" />
+              <div class="img-content">
+                <h3>What if? - Serious Game éducatif</h3>
+                <a class="btn btn-primary modal11-btn modal11-trigger11"
+                  
+                  >En savoir plus</a
+                >
+              </div>
             </div>
           </div>
 
           <div class="project-type prj3" >
             <div class="img-container">
+              <img src="./img/howmany.png" alt="error" />
+              <div class="img-content">
+                <h3>HowMany?! - API Genius</h3>
+                <a class="btn btn-primary modal12-btn modal12-trigger12"
+                  
+                  >En savoir plus</a
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="project-container container" data-aos="flip-left" data-aos-once="true" data-aos-delay="200">
+          <div class="project-type prj1" >
+            <div class="img-container">
+              <img src="./img/retroconception.png" alt="error" />
+              <div class="img-content">
+                <h3>Rétroconception d'une application web</h3>
+                <a class="btn btn-primary modal13-btn modal13-trigger13"
+                  
+                  >En savoir plus</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-type prj2"  >
+            <div class="img-container no-dispo">
               <img src="./img/vide.png" alt="error" />
               
             </div>
           </div>
 
-        
+          <div class="project-type prj3"  >
+            <div class="img-container no-dispo">
+              <img src="./img/vide.png" alt="error" />
+              
+            </div>
+          </div>
         </div>
 
         
@@ -291,16 +331,14 @@
 
         <h2>Me contacter</h2>
       <form>      
-        <input name="name" type="text" class="feedback-input" placeholder="Nom" />   
-        <input name="email" type="text" class="feedback-input" placeholder="Email" />
-        <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
-        <input type="submit" value="ENVOYER" title="ne fonctionne pas sur github pages !"/>
+        <input name="name" type="text" class="feedback-input" placeholder="Nom" disabled />   
+        <input name="email" type="text" class="feedback-input" placeholder="Email" disabled/>
+        <textarea name="text" class="feedback-input" placeholder="Message" disabled></textarea>
+        <input type="submit" value="ENVOYER" title="ne fonctionne pas sur github pages !" disabled/>
       </form>
 
     </section>
 
-    <!--Actuellement en études d'informatique, je manque de connaissances et je n'ai pas vu d'autres alternatives que de dupliquer chaque fenêtre modale, 
-      je me doute qu'il existe sûrement un moyen plus optimisé pour le faire-->
     <!--FENETRE MODALE STI2D-->
 
     <div class="modal-container">
@@ -945,6 +983,240 @@
     </div>
 
     <!--FENETRE MODALE GAMEJAM-->
+
+    <!--FENETRE MODALE WHATIF-->
+
+    <div class="modal11-container11">
+
+      <div class="overlay11 modal11-trigger11"></div>
+     
+      <div class="modal11">
+        <a class="close11-modal11 modal11-trigger11"> <i class="fa-solid fa-xmark"></i> </a>
+
+        <h2 class="projectTitle">What If? - Serious Game éducatif</h2>
+
+        <div class="containerSlider11">
+
+          <div class="slider11">
+            <img class="active11" src="./projets/img/whatif/1.png" title="jaquette du jeu">
+            <img src="./projets/img/GameJam/accueil.png" title="ecran d'accueil du jeu">
+            <img src="./projets/img/GameJam/credits.png" title="credits du jeu">
+            <img src="./projets/img/GameJam/choix.png" title="choix du personnage">
+            <img src="./projets/img/GameJam/choix2.png" title="choix du mode de jeu">
+            <img src="./projets/img/GameJam/jeu.png" title="mode de jeu flipper">
+            <img src="./projets/img/GameJam/jeu2.png" title="mode de jeu labyrinthe">
+            <img src="./projets/img/GameJam/loser.png" title="game over">
+            <img src="./projets/img/GameJam/args.png" title="parametres du jeu">
+          </div>
+      
+          <div class="cont-btn11">
+            <div class="btn-nav11 leftBtn11"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="btn-nav11 right11"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+
+      </div>
+
+      <!-- <p class="projectDesc2">
+
+        <span class="attract">Save The Exams</span> est un jeu vidéo d'horreur developpé à l'occasion de la <span class="attract">GameJam 2023</span> organisé en Novembre par <span class="attract">l'IUT2 de Grenoble</span>.
+        Nous étions un <span class="attract">groupe de 3</span> et nous avions <span class="attract">4 jours</span> pour apprendre le <span class="attract">Python</span> ainsi que le package <span class="attract">pygame</span> pour réaliser un jeu devant respecter les thèmes suivants: </p>
+        <div class="listes">
+        <ul class="gamejam">
+          <li>L'ambiance : Le monde merveilleux de l'IUT2.</li>
+          <li>Le mécanisme : Suivre le rythme.</li>
+          <li>Une contrainte Python : Parametrer le jeu avec des arguments en ligne de commande.</li>
+        </ul>
+      </div>
+        <p class="projectDesc2">
+        <span class="attract">Chiffres clés:</span>
+        </p>
+        <div class="listes">
+        <ul class="gamejam">
+          <dd><li>100 étudiants, 4 équipes de 3 et 22 équipes de 4.</li>
+          <li>Qualifié pour la semi-finale parmi les 6 meilleurs jeux.</li>
+          <li>Qualifié pour la finale parmi les 4 meilleurs jeux.</li>
+          <li>3ème meilleur jeu de la GameJam.</li>
+        </ul>
+      </div>
+        <p class="projectDesc2">
+        <span class="attract">Pour en savoir plus:</span> <a href="https://github.com/Yaniissou/JamJam2023">GameJam 2023</a>
+      </p> -->
+
+      <h3 class="projectComp">Compétences déployées</h3>
+
+      <!-- <div class="competences">
+
+        
+        <i class="fa-solid fa-person-chalkboard tooltip1"><span class="tooltiptext2">Réstitution orale du projet</span></i>
+        <i class="fa-solid fa-people-group tooltip1"><span class="tooltiptext3">Travail en équipe</span></i>
+        <i class="fa-solid fa-bug-slash tooltip1"><span class="tooltiptext16">Correction de bugs</span></i>
+        <i class="fa-solid fa-person tooltip1"><span class="tooltiptext28">Autonomie</span></i>
+        <i class="fa-brands fa-git-alt tooltip1"><span class="tooltiptext9">Utilisation de git</span></i>
+        <i class="fa-regular fa-clock tooltip1"> <span class="tooltiptext30"> Apprentissage en temps limité</span></i>
+        <i class="fa-brands fa-python tooltip1"><span class="tooltiptext31"> Programmation Python </span></i>
+       
+        
+      </div> -->
+      
+    </div>
+
+    <!--FENETRE MODALE WHATIF-->
+
+    <!--FENETRE MODALE API-->
+
+    <div class="modal12-container12">
+
+      <div class="overlay12 modal12-trigger12"></div>
+     
+      <div class="modal12">
+        <a class="close12-modal12 modal12-trigger12"> <i class="fa-solid fa-xmark"></i> </a>
+
+        <h2 class="projectTitle">HowMany? - API Genius</h2>
+
+        <div class="containerSlider12">
+
+          <div class="slider12">
+            <img class="active12" src="./projets/img/howmany/1.png" title="jaquette du jeu">
+            <img src="./projets/img/GameJam/accueil.png" title="ecran d'accueil du jeu">
+            <img src="./projets/img/GameJam/credits.png" title="credits du jeu">
+            <img src="./projets/img/GameJam/choix.png" title="choix du personnage">
+            <img src="./projets/img/GameJam/choix2.png" title="choix du mode de jeu">
+            <img src="./projets/img/GameJam/jeu.png" title="mode de jeu flipper">
+            <img src="./projets/img/GameJam/jeu2.png" title="mode de jeu labyrinthe">
+            <img src="./projets/img/GameJam/loser.png" title="game over">
+            <img src="./projets/img/GameJam/args.png" title="parametres du jeu">
+          </div>
+      
+          <div class="cont-btn12">
+            <div class="btn-nav12 leftBtn12"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="btn-nav12 right12"><i class="fa-solid fa-chevron-right"></i></div>
+          </div>
+
+      </div>
+
+      <!-- <p class="projectDesc2">
+
+        <span class="attract">Save The Exams</span> est un jeu vidéo d'horreur developpé à l'occasion de la <span class="attract">GameJam 2023</span> organisé en Novembre par <span class="attract">l'IUT2 de Grenoble</span>.
+        Nous étions un <span class="attract">groupe de 3</span> et nous avions <span class="attract">4 jours</span> pour apprendre le <span class="attract">Python</span> ainsi que le package <span class="attract">pygame</span> pour réaliser un jeu devant respecter les thèmes suivants: </p>
+        <div class="listes">
+        <ul class="gamejam">
+          <li>L'ambiance : Le monde merveilleux de l'IUT2.</li>
+          <li>Le mécanisme : Suivre le rythme.</li>
+          <li>Une contrainte Python : Parametrer le jeu avec des arguments en ligne de commande.</li>
+        </ul>
+      </div>
+        <p class="projectDesc2">
+        <span class="attract">Chiffres clés:</span>
+        </p>
+        <div class="listes">
+        <ul class="gamejam">
+          <dd><li>100 étudiants, 4 équipes de 3 et 22 équipes de 4.</li>
+          <li>Qualifié pour la semi-finale parmi les 6 meilleurs jeux.</li>
+          <li>Qualifié pour la finale parmi les 4 meilleurs jeux.</li>
+          <li>3ème meilleur jeu de la GameJam.</li>
+        </ul>
+      </div>
+        <p class="projectDesc2">
+        <span class="attract">Pour en savoir plus:</span> <a href="https://github.com/Yaniissou/JamJam2023">GameJam 2023</a>
+      </p> -->
+
+      <h3 class="projectComp">Compétences déployées</h3>
+
+      <!-- <div class="competences">
+
+        
+        <i class="fa-solid fa-person-chalkboard tooltip1"><span class="tooltiptext2">Réstitution orale du projet</span></i>
+        <i class="fa-solid fa-people-group tooltip1"><span class="tooltiptext3">Travail en équipe</span></i>
+        <i class="fa-solid fa-bug-slash tooltip1"><span class="tooltiptext16">Correction de bugs</span></i>
+        <i class="fa-solid fa-person tooltip1"><span class="tooltiptext28">Autonomie</span></i>
+        <i class="fa-brands fa-git-alt tooltip1"><span class="tooltiptext9">Utilisation de git</span></i>
+        <i class="fa-regular fa-clock tooltip1"> <span class="tooltiptext30"> Apprentissage en temps limité</span></i>
+        <i class="fa-brands fa-python tooltip1"><span class="tooltiptext31"> Programmation Python </span></i>
+       
+        
+      </div> -->
+      
+    </div>
+
+    <!--FENETRE MODALE API-->
+
+      <!--FENETRE MODALE SAE4-->
+
+      <div class="modal13-container13">
+
+        <div class="overlay13 modal13-trigger13"></div>
+       
+        <div class="modal13">
+          <a class="close13-modal13 modal13-trigger13"> <i class="fa-solid fa-xmark"></i> </a>
+  
+          <h2 class="projectTitle">Rétroconception d'une application web</h2>
+  
+          <div class="containerSlider13">
+  
+            <div class="slider13">
+              <img class="active13" src="./projets/img/retroconception/1.png" title="jaquette du jeu">
+              <img src="./projets/img/GameJam/accueil.png" title="ecran d'accueil du jeu">
+              <img src="./projets/img/GameJam/credits.png" title="credits du jeu">
+              <img src="./projets/img/GameJam/choix.png" title="choix du personnage">
+              <img src="./projets/img/GameJam/choix2.png" title="choix du mode de jeu">
+              <img src="./projets/img/GameJam/jeu.png" title="mode de jeu flipper">
+              <img src="./projets/img/GameJam/jeu2.png" title="mode de jeu labyrinthe">
+              <img src="./projets/img/GameJam/loser.png" title="game over">
+              <img src="./projets/img/GameJam/args.png" title="parametres du jeu">
+            </div>
+        
+            <div class="cont-btn13">
+              <div class="btn-nav13 leftBtn13"><i class="fa-solid fa-chevron-left"></i></div>
+              <div class="btn-nav13 right13"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+  
+        </div>
+  
+        <!-- <p class="projectDesc2">
+  
+          <span class="attract">Save The Exams</span> est un jeu vidéo d'horreur developpé à l'occasion de la <span class="attract">GameJam 2023</span> organisé en Novembre par <span class="attract">l'IUT2 de Grenoble</span>.
+          Nous étions un <span class="attract">groupe de 3</span> et nous avions <span class="attract">4 jours</span> pour apprendre le <span class="attract">Python</span> ainsi que le package <span class="attract">pygame</span> pour réaliser un jeu devant respecter les thèmes suivants: </p>
+          <div class="listes">
+          <ul class="gamejam">
+            <li>L'ambiance : Le monde merveilleux de l'IUT2.</li>
+            <li>Le mécanisme : Suivre le rythme.</li>
+            <li>Une contrainte Python : Parametrer le jeu avec des arguments en ligne de commande.</li>
+          </ul>
+        </div>
+          <p class="projectDesc2">
+          <span class="attract">Chiffres clés:</span>
+          </p>
+          <div class="listes">
+          <ul class="gamejam">
+            <dd><li>100 étudiants, 4 équipes de 3 et 22 équipes de 4.</li>
+            <li>Qualifié pour la semi-finale parmi les 6 meilleurs jeux.</li>
+            <li>Qualifié pour la finale parmi les 4 meilleurs jeux.</li>
+            <li>3ème meilleur jeu de la GameJam.</li>
+          </ul>
+        </div>
+          <p class="projectDesc2">
+          <span class="attract">Pour en savoir plus:</span> <a href="https://github.com/Yaniissou/JamJam2023">GameJam 2023</a>
+        </p> -->
+  
+        <h3 class="projectComp">Compétences déployées</h3>
+  
+        <!-- <div class="competences">
+  
+          
+          <i class="fa-solid fa-person-chalkboard tooltip1"><span class="tooltiptext2">Réstitution orale du projet</span></i>
+          <i class="fa-solid fa-people-group tooltip1"><span class="tooltiptext3">Travail en équipe</span></i>
+          <i class="fa-solid fa-bug-slash tooltip1"><span class="tooltiptext16">Correction de bugs</span></i>
+          <i class="fa-solid fa-person tooltip1"><span class="tooltiptext28">Autonomie</span></i>
+          <i class="fa-brands fa-git-alt tooltip1"><span class="tooltiptext9">Utilisation de git</span></i>
+          <i class="fa-regular fa-clock tooltip1"> <span class="tooltiptext30"> Apprentissage en temps limité</span></i>
+          <i class="fa-brands fa-python tooltip1"><span class="tooltiptext31"> Programmation Python </span></i>
+         
+          
+        </div> -->
+        
+      </div>
+  
+      <!--FENETRE MODALE SAE4-->
    
 
     <script src="./script.js"></script>

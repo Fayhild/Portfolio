@@ -33,8 +33,7 @@ window.onscroll = function() {
 
 /* FENETRES MODALES */ 
 
-/*Actuellement en première année d'informatique, je manque de connaissances et je n'ai pas vu d'autres alternatives que de dupliquer chaque fenêtre modale, 
-      je me doute qu'il existe sûrement un moyen plus optimisé pour le faire*/
+/* je devrais ptet faire une boucle un jour*/
 
 /* FENETRE MODALE STI2D */
 
@@ -101,7 +100,6 @@ document.addEventListener('keydown', keyPress)
 
 
 /* FENETRE MODALE ECONOCOM */
-
 
 const modalContainer2 = document.querySelector(".modal2-container2");
 const modalTriggers2 = document.querySelectorAll(".modal2-trigger2");
@@ -650,3 +648,176 @@ document.addEventListener('keydown', keyPress10)
 
 /* FENETRE MODALE GAMEJAM */
 
+/* FENETRE MODALE WHATIF */
+
+const modalContainer11 = document.querySelector(".modal11-container11");
+const modalTriggers11 = document.querySelectorAll(".modal11-trigger11");
+
+modalTriggers11.forEach(trigger11 => trigger11.addEventListener("click", toggleModal11))
+
+function toggleModal11(){
+  modalContainer11.classList.toggle("active11")
+}
+
+/*    */
+
+const items11 = document.querySelectorAll('.containerSlider11 img');
+const nbSlide11 = items11.length;
+const suivant11 = document.querySelector('.right11');
+const precedent11 = document.querySelector('.leftBtn11');
+let count11 = 0;
+
+function slideSuivante11(){
+    items11[count11].classList.remove('active11');
+
+    if(count11 < nbSlide11 - 1){
+        count11++;
+    } else {
+        count11 = 0;
+    }
+
+    items11[count11].classList.add('active11')   
+}
+
+suivant11.addEventListener('click', slideSuivante11)
+
+function slidePrecedente11(){
+    items11[count11].classList.remove('active11');
+
+    if(count11 > 0){
+        count11--;
+    } else {
+        count11 = nbSlide11 - 1;
+    }
+
+    items11[count11].classList.add('active11')  
+}
+precedent11.addEventListener('click', slidePrecedente11)
+
+function keyPress11(e){
+  
+    if(e.keyCode === 37){
+        slidePrecedente11();
+    } else if(e.keyCode === 39){
+        slideSuivante11();
+    }
+}
+document.addEventListener('keydown', keyPress11)
+
+/* FENETRE MODALE WHATIF */
+
+/* FENETRE MODALE API */
+
+const modalContainer12 = document.querySelector(".modal12-container12");
+const modalTriggers12 = document.querySelectorAll(".modal12-trigger12");
+
+modalTriggers12.forEach(trigger12 => trigger12.addEventListener("click", toggleModal12))
+
+function toggleModal12(){
+  modalContainer12.classList.toggle("active12")
+}
+
+/*    */
+
+const items12 = document.querySelectorAll('.containerSlider12 img');
+const nbSlide12 = items12.length;
+const suivant12 = document.querySelector('.right12');
+const precedent12 = document.querySelector('.leftBtn12');
+let count12 = 0;
+
+function slideSuivante12(){
+    items12[count12].classList.remove('active12');
+
+    if(count12 < nbSlide12 - 1){
+        count12++;
+    } else {
+        count12 = 0;
+    }
+
+    items12[count12].classList.add('active12')   
+}
+
+suivant12.addEventListener('click', slideSuivante12)
+
+function slidePrecedente12(){
+    items12[count12].classList.remove('active12');
+
+    if(count12 > 0){
+        count12--;
+    } else {
+        count12 = nbSlide12 - 1;
+    }
+
+    items12[count12].classList.add('active12')  
+}
+precedent12.addEventListener('click', slidePrecedente12)
+
+function keyPress12(e){
+  
+    if(e.keyCode === 37){
+        slidePrecedente12();
+    } else if(e.keyCode === 39){
+        slideSuivante12();
+    }
+}
+document.addEventListener('keydown', keyPress12)
+
+/* FENETRE MODALE API */
+
+/* FENETRE MODALE SAE4 */
+
+const modalContainer13 = document.querySelector(".modal13-container13");
+const modalTriggers13 = document.querySelectorAll(".modal13-trigger13");
+
+modalTriggers13.forEach(trigger13 => trigger13.addEventListener("click", toggleModal13))
+
+function toggleModal13(){
+  modalContainer13.classList.toggle("active13")
+}
+
+/*    */
+
+const items13 = document.querySelectorAll('.containerSlider13 img');
+const nbSlide13 = items13.length;
+const suivant13 = document.querySelector('.right13');
+const precedent13 = document.querySelector('.leftBtn13');
+let count13 = 0;
+
+function slideSuivante13(){
+    items13[count13].classList.remove('active13');
+
+    if(count13 < nbSlide13 - 1){
+        count13++;
+    } else {
+        count13 = 0;
+    }
+
+    items13[count13].classList.add('active13')   
+}
+
+suivant13.addEventListener('click', slideSuivante13)
+
+function slidePrecedente13(){
+    items13[count13].classList.remove('active13');
+
+    if(count13 > 0){
+        count13--;
+    } else {
+        count13 = nbSlide13 - 1;
+    }
+
+    items13[count13].classList.add('active13')  
+}
+precedent13.addEventListener('click', slidePrecedente13)
+
+function keyPress13(e){
+  
+    if(e.keyCode === 37){
+        slidePrecedente13();
+    } else if(e.keyCode === 39){
+        slideSuivante13();
+    }
+}
+document.addEventListener('keydown', keyPress13)
+
+/* FENETRE MODALE SAE4 */
