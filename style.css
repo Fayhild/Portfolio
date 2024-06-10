@@ -261,35 +261,23 @@ nav .menu {
         align-items: center;
         text-align: center;
         width: 100%;
-        height: 60vh; 
-        
-        
+        height: 60vh;
     }
 
     .homepage .moi {
-        font-size: 50px;  
-         
-                    
+        font-size: 50px;
     }
     
     .homepage .presentation, .homepage .etudes {
-    
         font-size: 30px;
-        
-        
     }
 
     .homepage .pdp img {
-
         transform: scale(80%);
-        
     }
-
     .homepage {
       margin-top: 25% !important;
     }
-
-    
 }
 
 main {
@@ -304,18 +292,15 @@ main {
 main .moi {
     font-size: 100px;
     font-family: 'Inter', sans-serif;
-    
 }
 
 main .presentation, .etudes {
-
     font-size: 50px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 .homepage {
-
     display: flex;
     justify-content: space-around;
     width: 80%; 
@@ -323,21 +308,17 @@ main .presentation, .etudes {
 }
 
 .homepage img {
-
     transform: scale(115%);
     box-shadow: 20px 20px rgba(0,0,0,.15);
     transition: all .4s ease;
 }
 
 .homepage img:hover {
-
     box-shadow: 10px 10px rgba(0,0,0,.15);
     transition: all .4s ease;
-
 }
 
 section {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -347,14 +328,10 @@ section {
 
     main .moi {
         font-size: 80px;
-        
-        
     }
     
     main .presentation, .etudes {
-    
         font-size: 40px;
-        
     }
 
 }
@@ -363,18 +340,13 @@ section {
 
     main .moi {
         font-size: 60px;
-        
-        
     }
     
     main .presentation, .etudes {
-    
         font-size: 30px;
-        
     }
 
     .homepage img {
-
         transform: scale(100%);
     }
 
@@ -384,18 +356,13 @@ section {
 
     main .moi {
         font-size: 50px;
-        
-        
     }
     
     main .presentation, .etudes {
-    
         font-size: 25px;
-        
     }
 
     .homepage img {
-
         transform: scale(80%);
     }
 
@@ -403,26 +370,19 @@ section {
 
 
 @media screen and (max-width: 950px) {
-
     main .moi {
         font-size: 35px;
-        
-        
     }
     
     main .presentation, .etudes {
-    
         font-size: 20px;
-        
     }
 
     .homepage img {
-
         transform: scale(70%);
     }
 
     .homepage {
-
         margin-left: 2%;   
     }
 }
@@ -603,6 +563,17 @@ section #project {
   #comingsoon {
     display: none;
   }
+
+  .s3-section {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 18px;
+  }
+
+.s3-section:nth-child(n+2) {
+    margin-top: 10px;
+}
   
   /* ......../ media query /.......... */
 
@@ -949,7 +920,14 @@ textarea {
   text-align: justify;
   max-width: 90%;
   list-style-type: circle;
-  
+}
+
+.whatif li {
+    margin: 2% auto;
+    font-family: 'Inter' ;
+    text-align: justify;
+    max-width: 90%;
+    list-style-type: circle;
 }
 
 .listes {
