@@ -661,7 +661,7 @@ function toggleModal11(){
 
 /*    */
 
-const items11 = document.querySelectorAll('.containerSlider11 img');
+const items11 = document.querySelectorAll('.containerSlider11 .gallery11');
 const nbSlide11 = items11.length;
 const suivant11 = document.querySelector('.right11');
 const precedent11 = document.querySelector('.leftBtn11');
@@ -777,13 +777,14 @@ function toggleModal13(){
 
 /*    */
 
-const items13 = document.querySelectorAll('.containerSlider13 img');
+const items13 = document.querySelectorAll('.containerSlider13 .gallery13');
 const nbSlide13 = items13.length;
 const suivant13 = document.querySelector('.right13');
 const precedent13 = document.querySelector('.leftBtn13');
 let count13 = 0;
 
 function slideSuivante13(){
+    console.log(items13);
     items13[count13].classList.remove('active13');
 
     if(count13 < nbSlide13 - 1){

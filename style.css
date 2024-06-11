@@ -3447,13 +3447,13 @@ img.active10 {
   
 }
 
-.slider11 img {
+.slider11 img, .slider11 video {
   max-width: 100%;
   display: none; 
   height: auto;
 }
 
-img.active11 {
+img.active11, video.active11 {
   display: block;
   animation: fadeZ 0.8s;
 }
@@ -3662,7 +3662,7 @@ img.active12 {
   
 }
 
-.slider13 img {
+.gallery13 {
   max-width: 100%;
   display: none; 
   height: auto;
@@ -3671,6 +3671,11 @@ img.active12 {
 img.active13 {
   display: block;
   animation: fadeZ 0.8s;
+}
+
+video.active13 {
+    display: block;
+    animation: fadeZ 0.8s;
 }
 
 .cont-btn13 {
